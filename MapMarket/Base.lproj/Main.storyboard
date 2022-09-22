@@ -9,45 +9,52 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapMarket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Main" id="BYZ-38-t0r" customClass="ViewController" customModule="MapMarket" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cVc-zd-CQk">
-                                <rect key="frame" x="16" y="47" width="358" height="740"/>
+                                <rect key="frame" x="16" y="47" width="358" height="763"/>
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="SZr-D4-ORH">
-                                <rect key="frame" x="101" y="713" width="188" height="34.333333333333371"/>
+                                <rect key="frame" x="101" y="736" width="188" height="34.333333333333371"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lml-eb-ZD0">
-                                        <rect key="frame" x="0.0" y="0.0" width="67" height="34.333333333333336"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Menu">
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="kwy-i1-vFc" kind="presentation" id="JJB-ds-wfq"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ox0-ek-3qX">
-                                        <rect key="frame" x="118" y="0.0" width="70" height="34.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Social">
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="tgJ-og-S2o" kind="presentation" id="Ytp-Xd-4eQ"/>
+                                            <segue destination="kwy-i1-vFc" kind="presentation" id="wDV-zo-tlk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ox0-ek-3qX">
+                                        <rect key="frame" x="134.33333333333334" y="0.0" width="53.666666666666657" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Bag">
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="tgJ-og-S2o" kind="presentation" id="v5T-iT-kEg"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tft-2u-rk6">
+                                <rect key="frame" x="-1" y="47" width="390" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="MapMarket" id="tFM-bm-AcB"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uFs-A4-emt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -78,31 +85,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIg-Qs-mhX">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="50.333333333333336"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </backgroundConfiguration>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="mapButtonFromOrganizations:" destination="tgJ-og-S2o" eventType="touchUpInside" id="TzS-ap-MWZ"/>
-                                    <action selector="mapFromOrganizationPage:" destination="tgJ-og-S2o" eventType="touchUpInside" id="JPi-dQ-fkm"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="h0Q-98-OfE"/>
-                                </connections>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ghE-ZN-ePj">
-                                <rect key="frame" x="0.0" y="63.333333333333314" width="390" height="723.66666666666674"/>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DKY-Ui-4zy">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="56"/>
+                                <items>
+                                    <navigationItem title="Organizations" id="yzL-Uo-dfX"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ghE-ZN-ePj" customClass="myTableView">
+                                <rect key="frame" x="0.0" y="69" width="390" height="718"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="F6M-Uf-Huy"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ghE-ZN-ePj" firstAttribute="top" secondItem="DKY-Ui-4zy" secondAttribute="bottom" constant="13" id="PLZ-ic-cxA"/>
+                            <constraint firstItem="ghE-ZN-ePj" firstAttribute="top" secondItem="DKY-Ui-4zy" secondAttribute="bottom" constant="13" id="ViB-Fd-eFD"/>
+                        </constraints>
                     </stackView>
                     <connections>
-                        <outlet property="myTableView" destination="ghE-ZN-ePj" id="2hJ-H9-De0"/>
+                        <outlet property="myTableView" destination="ghE-ZN-ePj" id="om2-gt-mcY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jMZ-gj-F2m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -117,28 +119,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcb-gY-GIh">
-                                <rect key="frame" x="158" y="376" width="75" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                <connections>
-                                    <action selector="mapFromSocialButton:" destination="kwy-i1-vFc" eventType="touchUpInside" id="feA-Kl-3xy"/>
-                                </connections>
-                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cCj-tc-bRv">
+                                <rect key="frame" x="-16" y="3" width="389" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Social" id="mQt-NR-CnZ"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FEq-5t-BbA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="pcb-gY-GIh" firstAttribute="top" secondItem="FEq-5t-BbA" secondAttribute="top" constant="329" id="4jI-fO-fLM"/>
-                            <constraint firstItem="FEq-5t-BbA" firstAttribute="trailing" secondItem="pcb-gY-GIh" secondAttribute="trailing" constant="157" id="d5j-oC-T7P"/>
-                            <constraint firstItem="pcb-gY-GIh" firstAttribute="leading" secondItem="FEq-5t-BbA" secondAttribute="leading" constant="158" id="g3M-yh-4BT"/>
-                            <constraint firstItem="FEq-5t-BbA" firstAttribute="bottom" secondItem="pcb-gY-GIh" secondAttribute="bottom" constant="376" id="wYH-Pg-rkK"/>
-                        </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VUo-oX-Pru" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-665" y="-9"/>
+            <point key="canvasLocation" x="-666.15384615384608" y="-9.24170616113744"/>
         </scene>
     </scenes>
     <resources>

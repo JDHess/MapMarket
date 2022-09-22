@@ -6,14 +6,28 @@
 //
 
 import UIKit
+import UIKit
 
-class OrganizationsMenuViewController: UIViewController {
+
+class OrganizationsMenuViewController: UIViewController  {
 
     var foundOrganizations: [Organizations] = []
     var unfoundOrganizations: [Organizations] = []
-    @IBAction func mapFromOrganizationPage(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
+    
+    
+    
+    
+    
+    /*@IBAction func mapFromOrganizationPage(_ sender: UIButton) {
+        OrganizationsMenuViewController = OrganizationsMenuViewController
+        self.OrganizationsMenuViewController.dismiss(animated: true)
+    }*/
+    //self.dismiss(animated: true, completion: nil)
+   
+    //self.dismiss(animated: true, completion: nil)
+    
+    @IBOutlet weak var myTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
