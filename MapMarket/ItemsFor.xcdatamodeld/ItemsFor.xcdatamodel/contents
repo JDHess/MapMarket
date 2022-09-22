@@ -3,5 +3,6 @@
     <entity name="Organizations" representedClassName="Organizations" syncable="YES" codeGenerationType="category">
         <attribute name="imageFileName" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="timesCaught" optional="YES" attributeType="Integer 64" minValueString="0" maxValueString="2" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
 </model>

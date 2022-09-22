@@ -32,7 +32,7 @@
                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="tgJ-og-S2o" kind="presentation" id="XhP-CY-prv"/>
+                                            <segue destination="kwy-i1-vFc" kind="presentation" id="JJB-ds-wfq"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ox0-ek-3qX">
@@ -42,6 +42,9 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="tgJ-og-S2o" kind="presentation" id="Ytp-Xd-4eQ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -67,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="47.692307692307693" y="-2.1327014218009479"/>
         </scene>
-        <!--Items For View Controller-->
+        <!--Organizations Menu View Controller-->
         <scene sceneID="pP3-gQ-oS3">
             <objects>
-                <viewController id="tgJ-og-S2o" customClass="itemsForViewController" customModule="MapMarket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tgJ-og-S2o" customClass="OrganizationsMenuViewController" customModule="MapMarket" customModuleProvider="target" sceneMemberID="viewController">
                     <stackView key="view" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" id="w6u-aP-sAw">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -86,6 +89,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="mapButtonFromOrganizations:" destination="tgJ-og-S2o" eventType="touchUpInside" id="TzS-ap-MWZ"/>
+                                    <action selector="mapFromOrganizationPage:" destination="tgJ-og-S2o" eventType="touchUpInside" id="JPi-dQ-fkm"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="h0Q-98-OfE"/>
                                 </connections>
                             </button>
@@ -104,6 +108,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jMZ-gj-F2m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="781.53846153846155" y="5.6872037914691944"/>
+        </scene>
+        <!--Social View Controller-->
+        <scene sceneID="9Rn-ER-nfi">
+            <objects>
+                <viewController id="kwy-i1-vFc" customClass="SocialViewController" customModule="MapMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X6F-Xw-7K2">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcb-gY-GIh">
+                                <rect key="frame" x="158" y="376" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="mapFromSocialButton:" destination="kwy-i1-vFc" eventType="touchUpInside" id="feA-Kl-3xy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FEq-5t-BbA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pcb-gY-GIh" firstAttribute="top" secondItem="FEq-5t-BbA" secondAttribute="top" constant="329" id="4jI-fO-fLM"/>
+                            <constraint firstItem="FEq-5t-BbA" firstAttribute="trailing" secondItem="pcb-gY-GIh" secondAttribute="trailing" constant="157" id="d5j-oC-T7P"/>
+                            <constraint firstItem="pcb-gY-GIh" firstAttribute="leading" secondItem="FEq-5t-BbA" secondAttribute="leading" constant="158" id="g3M-yh-4BT"/>
+                            <constraint firstItem="FEq-5t-BbA" firstAttribute="bottom" secondItem="pcb-gY-GIh" secondAttribute="bottom" constant="376" id="wYH-Pg-rkK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VUo-oX-Pru" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-665" y="-9"/>
         </scene>
     </scenes>
     <resources>
