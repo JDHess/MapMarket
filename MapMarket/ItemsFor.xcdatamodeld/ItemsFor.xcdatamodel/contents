@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21279" systemVersion="21G115" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Organizations" representedClassName="Organizations" syncable="YES" codeGenerationType="class">
+    <entity name="Organizations" representedClassName="Organizations" syncable="YES" codeGenerationType="category">
         <attribute name="imageFileName" optional="YES" attributeType="String"/>
         <attribute name="organization" optional="YES" attributeType="String"/>
     </entity>
