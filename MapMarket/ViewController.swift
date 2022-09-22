@@ -15,13 +15,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var mymap: MKMapView!
     
     let locationM = CLLocationManager()
+    var update = 0
+    var manager = CLLocationManager()
     
+    var organizations: [Organizations] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         locationM.delegate = self
+        organizations = bringAllOrganizations()
         locationM.requestWhenInUseAuthorization()
         locationM.startUpdatingLocation()
+        
     }
 }
 // MARK: - user Location

@@ -14,15 +14,15 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapMarket" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cVc-zd-CQk">
-                                <rect key="frame" x="16" y="47" width="358" height="763"/>
+                                <rect key="frame" x="16" y="47" width="358" height="740"/>
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="SZr-D4-ORH">
-                                <rect key="frame" x="101" y="736" width="188" height="34.333333333333371"/>
+                                <rect key="frame" x="101" y="713" width="188" height="34.333333333333371"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lml-eb-ZD0">
                                         <rect key="frame" x="0.0" y="0.0" width="67" height="34.333333333333336"/>
@@ -46,18 +46,19 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="uFs-A4-emt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cVc-zd-CQk" secondAttribute="trailing" constant="16" id="2LD-xb-kel"/>
-                            <constraint firstItem="cVc-zd-CQk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="F1e-ng-7gw"/>
-                            <constraint firstItem="cVc-zd-CQk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="LSI-4W-Z6H"/>
-                            <constraint firstItem="cVc-zd-CQk" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="RlJ-nS-H2s"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SZr-D4-ORH" secondAttribute="bottom" constant="39.670000000000002" id="aRh-v1-Fv5"/>
-                            <constraint firstItem="SZr-D4-ORH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="101" id="afh-Oa-mgc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SZr-D4-ORH" secondAttribute="trailing" constant="101" id="rTP-E8-jPb"/>
+                            <constraint firstItem="uFs-A4-emt" firstAttribute="trailing" secondItem="cVc-zd-CQk" secondAttribute="trailing" constant="16" id="2LD-xb-kel"/>
+                            <constraint firstItem="cVc-zd-CQk" firstAttribute="top" secondItem="uFs-A4-emt" secondAttribute="top" id="F1e-ng-7gw"/>
+                            <constraint firstItem="cVc-zd-CQk" firstAttribute="leading" secondItem="uFs-A4-emt" secondAttribute="leading" constant="16" id="LSI-4W-Z6H"/>
+                            <constraint firstItem="cVc-zd-CQk" firstAttribute="bottom" secondItem="uFs-A4-emt" secondAttribute="bottom" id="RlJ-nS-H2s"/>
+                            <constraint firstItem="uFs-A4-emt" firstAttribute="bottom" secondItem="SZr-D4-ORH" secondAttribute="bottom" constant="39.670000000000002" id="aRh-v1-Fv5"/>
+                            <constraint firstItem="SZr-D4-ORH" firstAttribute="leading" secondItem="uFs-A4-emt" secondAttribute="leading" constant="101" id="afh-Oa-mgc"/>
+                            <constraint firstItem="uFs-A4-emt" firstAttribute="trailing" secondItem="SZr-D4-ORH" secondAttribute="trailing" constant="101" id="rTP-E8-jPb"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="4bj-4H-NYi"/>
                     <connections>
                         <outlet property="mymap" destination="cVc-zd-CQk" id="a5Q-Gm-ZkA"/>
                     </connections>
@@ -66,41 +67,39 @@
             </objects>
             <point key="canvasLocation" x="47.692307692307693" y="-2.1327014218009479"/>
         </scene>
-        <!--Items For View Controller.swift-->
+        <!--Items For View Controller-->
         <scene sceneID="pP3-gQ-oS3">
             <objects>
-                <viewController id="tgJ-og-S2o" customClass="ItemsForViewController.swift" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="n77-S3-l5s">
+                <viewController id="tgJ-og-S2o" customClass="itemsForViewController" customModule="MapMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <stackView key="view" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" id="w6u-aP-sAw">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" id="oaL-a3-8XI">
-                                <rect key="frame" x="16" y="47" width="358" height="763"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="4kg-ZT-Wnd">
-                                        <rect key="frame" x="0.0" y="0.0" width="358" height="34.333333333333336"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Back To Map">
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="backToMapButon:" destination="tgJ-og-S2o" eventType="touchUpInside" id="MIA-e8-70p"/>
-                                            <action selector="backToMapButton:" destination="tgJ-og-S2o" eventType="touchUpInside" id="HtQ-N0-Nz8"/>
-                                        </connections>
-                                    </button>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="UkK-Ih-wpq">
-                                        <rect key="frame" x="0.0" y="34.333333333333314" width="358" height="728.66666666666674"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    </tableView>
-                                </subviews>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIg-Qs-mhX">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="50.333333333333336"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="mapButtonFromOrganizations:" destination="tgJ-og-S2o" eventType="touchUpInside" id="TzS-ap-MWZ"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="h0Q-98-OfE"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ghE-ZN-ePj">
+                                <rect key="frame" x="0.0" y="63.333333333333314" width="390" height="723.66666666666674"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="jHS-lo-y76"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
+                        <viewLayoutGuide key="safeArea" id="F6M-Uf-Huy"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </stackView>
+                    <connections>
+                        <outlet property="myTableView" destination="ghE-ZN-ePj" id="2hJ-H9-De0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jMZ-gj-F2m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
